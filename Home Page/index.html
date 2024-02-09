@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #EADBC8;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            border: 1px solid black;
+            width: 165px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            background-color: #DAC0A3;
+            margin-right: 10px;
+        }
+
+        .logo {
+            margin-top: 10px;
+            margin-right: auto;
+            border: 0px;
+            background-color: #EADBC8;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .sb {
+            display: flex;
+            margin: auto;
+            padding: 30px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .sbm {
+            display: grid;
+            grid-template-areas: "sb sj";
+        }
+
+        .b1 {
+            grid-area: sb;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            width: 700px;
+            /* Adjust the width as needed */
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* .b2 {
+            grid-area: sj;
+            border: 2px solid black;
+            width: 250px; /* Adjust the width as needed */
+
+        .main {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .insi {
+            display: grid;
+            grid-template-areas: "hi job";
+        }
+
+        .brox {
+            grid-area: hi;
+            background-color: #DAC0A3;
+            border: 2px solid black;
+            width: 106px;
+            /* Adjust the width as needed */
+            height: 79px;
+            padding: 40px;
+            margin: 5px;
+            box-shadow: inset 60px 53px 81px #f2c28b;
+            place-content: center;
+            place-items: center;
+            border-radius: 10px;
+
+        }
+
+        .brox2 {
+
+            grid-area: job;
+            background-color: #DAC0A3;
+
+            border: 2px solid black;
+            width: 106px;
+            /* Adjust the width as needed */
+            height: 79px;
+            padding: 40px;
+            margin: 5px;
+            box-shadow: inset 60px 53px 81px #f2c28b;
+            place-content: center;
+            place-items: center;
+            border-radius: 10px;
+
+        }
+
+        .fup {
+            font-size: xx-large;
+        }
+
+        .headz {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .gri {
+            display: grid;
+            grid-template-areas: "jb1 jb2 jb3 jb4";
+        }
+
+        .con1 {
+            grid: jb1;
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            background-color: aliceblue;
+            margin: 45px;
+            padding: 45px;
+        }
+
+        .con2 {
+            grid: jb2;
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            background-color: aliceblue;
+            margin: 45px;
+            padding: 45px;
+        }
+
+        .con3 {
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            background-color: aliceblue;
+            margin: 45px;
+            padding: 45px;
+        }
+
+        .con4 {
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            background-color: aliceblue;
+            margin: 45px;
+            padding: 45px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="laneicon.jpg" alt="" width="144px" height="50px"></li>
+            <li class="box">Home</li>
+            <li class="box">Contact</li>
+            <li class="box">About</li>
+            <li class="user"><img src="usericon (1).png" width="30px" height="30px" alt=""> Keshav</li>
+        </ul>
+    </nav>
+
+    <div class="sb">
+        <div class="sbm">
+            <div class="b1"> Search</div>
+
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="insi">
+            <div class="brox">Jobs</div>
+            <div class="brox2">Hire</div>
+        </div>
+
+    </div>
+    <div class="fup">Some Common jobs</div>
+    <div class="headz">
+        <div class="gri">
+            <div class="con1">Electrician</div>
+            <div class="con2">Carpainter</div>
+            <div class="con3">Painter</div>
+            <div class="con4">Mechanic</div>
+        </div>
+    </div>
+</body>
+
+</html>
