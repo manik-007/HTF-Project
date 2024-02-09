@@ -1,0 +1,41 @@
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #15ef1c;
+    color: rgb(159, 44, 44);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
