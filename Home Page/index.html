@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <style>
+        body{
+            border: 10px solid #d39249 ;
+            padding: 10px;
+            height: 90vh;
+        }
         * {
             margin: 0;
             padding: 0;
@@ -65,12 +70,8 @@
             /* Adjust the width as needed */
             padding: 10px;
             margin: 5px;
+            border-radius: 30px;
         }
-
-        /* .b2 {
-            grid-area: sj;
-            border: 2px solid black;
-            width: 250px; /* Adjust the width as needed */
 
         .main {
             display: flex;
@@ -92,18 +93,15 @@
             height: 79px;
             padding: 40px;
             margin: 5px;
-            box-shadow: inset 60px 53px 81px #f2c28b;
+            box-shadow: inset 60px 53px 81px rgb(242, 194, 139);
             place-content: center;
             place-items: center;
             border-radius: 10px;
-
         }
 
         .brox2 {
-
             grid-area: job;
             background-color: #DAC0A3;
-
             border: 2px solid black;
             width: 106px;
             /* Adjust the width as needed */
@@ -114,11 +112,15 @@
             place-content: center;
             place-items: center;
             border-radius: 10px;
-
         }
 
         .fup {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            padding: 30px;
             font-size: xx-large;
+           
         }
 
         .headz {
@@ -132,48 +134,31 @@
             grid-template-areas: "jb1 jb2 jb3 jb4";
         }
 
-        .con1 {
-            grid: jb1;
-            border: 2px solid black;
-            height: 50px;
-            width: 50px;
-            background-color: aliceblue;
-            margin: 45px;
-            padding: 45px;
+        .con1, .con2, .con3, .con4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px;
         }
 
-        .con2 {
-            grid: jb2;
+        .con1 img, .con2 img, .con3 img, .con4 img {
             border: 2px solid black;
-            height: 50px;
-            width: 50px;
-            background-color: aliceblue;
-            margin: 45px;
-            padding: 45px;
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 300px;
+            margin-bottom: 10px;
         }
-
-        .con3 {
-            border: 2px solid black;
-            height: 50px;
-            width: 50px;
-            background-color: aliceblue;
-            margin: 45px;
-            padding: 45px;
-        }
-
-        .con4 {
-            border: 2px solid black;
-            height: 50px;
-            width: 50px;
-            background-color: aliceblue;
-            margin: 45px;
-            padding: 45px;
-
+        p{
+            background-color: #e9c194;
         }
     </style>
 </head>
 
 <body>
+    <div class="bor">
     <nav>
         <ul>
             <li class="logo"><img src="laneicon.jpg" alt="" width="144px" height="50px"></li>
@@ -187,26 +172,39 @@
     <div class="sb">
         <div class="sbm">
             <div class="b1"> Search</div>
-
         </div>
     </div>
 
     <div class="main">
         <div class="insi">
             <div class="brox">Jobs</div>
-            <div class="brox2">Hire</div>
+            <div class="brox2">People Hired 
+                <p>N/A</p>
+            </div>
         </div>
-
     </div>
-    <div class="fup">Some Common jobs</div>
+    <div class="fup">Some of our Recent Searches</div>
     <div class="headz">
         <div class="gri">
-            <div class="con1">Electrician</div>
-            <div class="con2">Carpainter</div>
-            <div class="con3">Painter</div>
-            <div class="con4">Mechanic</div>
+            <div class="con1">
+                <img src="electrician.png" alt="" height="150px" width="150px">
+                <span>Electrician</span>
+            </div>
+            <div class="con2">
+                <img src="Mechanic.png" alt="" height="150px" width="150px">
+                <span>Mechanic</span>
+            </div>
+            <div class="con3">
+                <img src="carpentry.png" alt="" height="150px" width="150px">
+                <span>Carpentry</span>
+            </div>
+            <div class="con4">
+                <img src="Painting.png" alt="" height="150px" width="150px">
+                <span>Wall Painting</span>
+            </div>
         </div>
     </div>
+    <div>
 </body>
 
 </html>
