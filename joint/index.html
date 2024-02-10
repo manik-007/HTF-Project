@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence Demo</title>
+    <style>
+        /* Global styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: blue;
+            color: #fff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            box-shadow: 0 2px 4px rgba(43, 42, 42, 0.1);
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: rgb(212, 212, 253);
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            border: 1px solid black;
+            width: 165px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            background-color: #DAC0A3;
+            margin-right: 10px;
+        }
+
+        .logo {
+            margin-top: 10px;
+            margin-right: auto;
+            border: 0px;
+            background-color: #EADBC8;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        /* Section styles */
+        section {
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer {
+            background-color: blue;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        /* Login button styles */
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Container styles */
+        .container {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin: 2rem auto;
+            width: 30rem;
+            max-width: 90%;
+        }
+
+        /* User Detail Page styles */
+        textarea {
+            width: 100%;
+            height: 100px;
+            resize: none;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 0.5rem;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        input[type="file"] {
+            margin-bottom: 1rem;
+        }
+
+        /* Home Page styles */
+        .sb, .main, .insi, .gri {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .sbm {
+            display: grid;
+            grid-template-areas: "sb sj";
+        }
+
+        .b1 {
+            grid-area: sb;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            width: 700px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .brox, .brox2, .con1, .con2, .con3, .con4 {
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            background-color: aliceblue;
+            margin: 45px;
+            padding: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Page -->
+    <header>
+        <h1>Welcome to My E-commerce Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="logo"><img src="laneicon.jpg" alt="" width="144px" height="50px"></li>
+            <li class="box">Home</li>
+            <li class="box">Contact</li>
+            <li class="box">About</li>
+            <li class="user"><img src="usericon (1).png" width="30px" height="30px" alt=""> Keshav</li>
+        </ul>
+    </nav>
+    <section>
+        <button id="loginButton">Login</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Service Lane. All rights reserved.</p>
+    </footer>
+
+    <!-- User Detail Page -->
+    <div id="userDetailPage" style="display: none;">
+        <div class="container">
+            <h2>Welcome To // Project name</h2>
+            <form id="user-form">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="mobile">Mobile Number:</label><br>
+                <input type="tel" id="mobile" name="mobile"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="details">User Details:</label><br>
+                <textarea id="details" name="details"></textarea><br>
+                <label for="confirm-password">Confirm Password:</label><br>
+                <input type="password" id="confirm-password" name="confirm-password"><br>
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city"><br>
+                <label for="gender">Gender:</label><br>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label for="category">Category:</label><br>
+                <select id="category" name="category">
+                    <option value="hire">Hire</option>
+                    <option value="apply-job">Apply Job</option>
+                </select><br>
+                <label for="image">Upload Image:</label><br>
+                <input type="file" id="image" name="image"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <button id="continueToHome">Continue to Home</button>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+    <div id="homePage" style="display: none;">
+        <header>
+            <h1>Welcome to My E-commerce Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li class="logo"><img src="laneicon.jpg" alt="" width="144px" height="50px"></li>
+                <li class="box">Home</li>
+                <li class="box">Contact</li>
+                <li class="box">About</li>
+                <li class="user"><img src="usericon (1).png" width="30px" height="30px" alt=""> Keshav</li>
+            </ul>
+        </nav>
+        <section>
+            <div class="sb">
+                <div class="sbm">
+                    <div class="b1">Search</div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="insi">
+                    <div class="brox">Jobs</div>
+                    <div class="brox2">Hire</div>
+                </div>
+            </div>
+            <div class="fup">Some Common jobs</div>
+            <div class="headz">
+                <div class="gri">
+                    <div class="con1">Electrician</div>
+                    <div class="con2">Carpainter</div>
+                    <div class="con3">Painter</div>
+                    <div class="con4">Mechanic</div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Service Lane. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Get references to the pages and buttons
+        const loginPage = document.querySelector('header, nav, section, footer');
+        const userDetailPage = document.getElementById('userDetailPage');
+        const homePage = document.getElementById('homePage');
+        const loginButton = document.getElementById('loginButton');
+        const continueToHomeButton = document.getElementById('continueToHome');
+
+        // Function to show the user detail page
+        function showUserDetailPage() {
+            loginPage.style.display = 'none';
+            userDetailPage.style.display = 'block';
+        }
+
+        // Function to show the home page
+        function showHomePage() {
+            userDetailPage.style.display = 'none';
+            homePage.style.display = 'block';
+        }
+
+        // Attach event listeners to buttons for navigation
+        loginButton.addEventListener('click', showUserDetailPage);
+        continueToHomeButton.addEventListener('click', showHomePage);
+
+        // Show the login page initially
+        loginPage.style.display = 'block';
+    </script>
+</body>
+</html>
