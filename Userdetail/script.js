@@ -12,4 +12,4 @@
 //     var category = document.getElementById('category').value;
 
 //     // Validate form
-//     if (username && mobile && email && details && confirmPassword && city && gender && category) {
+//     if (username && mobile && email && details && confirmPassword && city && gender && category) ; }
