@@ -1,0 +1,75 @@
+.feed-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Feed {
+    align-items: center;
+    width: 60%;
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: rgb(175, 151, 151) 5px 5px 15px;
+    padding: 20px;
+}
+
+.Feedbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.image {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgb(141, 187, 184);
+    align-content: center;
+    margin-left: 30px;
+}
+
+.Details-section {
+    width: 85%;
+    padding-bottom: 20px;
+    border-bottom: gray 1px solid;
+}
+
+.Name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.job {
+    font-size: 18px;
+    margin: 2px 0;
+}
+
+.rating {
+    color: gray;
+}
+
+.Status {
+    font-size: 18px;
+    margin: 2px 0;
+    color: green;
+    margin: 3px 0;
+}
+
+.hired {
+    color: red;
+}
+
+.line {
+    width: 80%;
+    margin: 50px auto 0 auto;
+}
+
+.bottom-text {
+    color: gray;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px 0;
+    text-align: center;
+}
